@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Enquiry Chatbot</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}" />
+  </head>
+  <body>
+    <center>
+      <h1>GOVERNMENT COLLEGE OF TECHNOLOGY, COIMBATORE-13</h1>
+      <h4>(An Autonomous Institution affiliated to Anna University)</h4><br>
+      <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="College Logo" width="150" height="200">
+
+      <br><br>
+      <font face="Cinzel">
+          <a href="https://gct.ac.in/user">MY GMAIL |</a>
+          <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1">ACCESS GCT E-MAIL |</a>
+          <a href="http://www.gctalumni.org.in/">ALUMNI |</a>
+          <a href="https://gct.ac.in/contact-gct">CONTACT |</a>
+      </font>
+      <br><br>
+  
+      <marquee direction="right" scrollamount="10">
+          The Institution has been accredited by NAAC - A grade with a score of 3.21 for a period of 5 years 
+      </marquee>
+
+      <p>GCT WEBSITE - <a href="https://gct.ac.in">gct.ac.in</a></p>
+      <br>
+      
+      <h3>DEPARTMENTS:</h3><br>
+      <center>Information Technology</br>
+      Computer Science Engineering</br>Electronics and Communication Engineering</br>
+      Industrial Biotechnology<br>
+      Mechanical Engineering<br>
+      Electrical and Electronics Engineering<br>
+      Electronics and Instrumentation <br>
+      Civil Engineering<br>
+      Production Engineering<br><br></center>
+      
+      <table border="1">
+          <tr>
+              <th colspan="2"><font color="red">Clubs</font></th>
+              <th><font color="#017bf5">Forms</font></th>
+          </tr>
+          <tr>
+              <td>Eliminators</td>
+              <td>Literary & Debating Society</td>
+              <td><font color="#017bf5">Wifi-form</font></td>
+          </tr>
+          <tr>
+              <td>Sports club</td>
+              <td>Tamil Mandram</td>
+              <td><font color="#017bf5">fee-form</font></td>
+          </tr>
+          <tr>
+              <td>Administration Aspirants Council</td>
+              <td>Rotaract-club</td>
+              <td><font color="#017bf5">staff-form</font></td>
+          </tr>
+          <tr>
+              <td>gSARC</td>
+              <td>National Service Scheme</td>
+              <td><font color="#017bf5">Audit-form</font></td>
+          </tr>
+          <tr>
+              <td>Students Journalist Council</td>
+              <td>Green Club</td>
+              <td><font color="#017bf5">Bonafide-form</font></td>
+          </tr>
+      </table>
+      <br><br>
+
+      <form>
+          <input type="text" placeholder="search..."
+          name="search">
+          <button type="submit">submit </button>
+          </form>
+
+      <!-- News, Events, Notice Boards -->
+      <br>
+      <h2>Campus News</h2>
+      <marquee direction="up" scrollamount="7" style="height:200px;">
+          <ul>
+              <li><img src="images/new.gif">AISHE Reports</li>
+              <li><img src="images/new.gif">Bonafide and Fee Structures - UG / PG students - 2023 to 2024</li>
+              <li><img src="images/new.gif">Fees Circular- Full Time B.E / M.E / Part Time B.E</li>
+              <li><img src="images/new.gif">Part Time B.E Admissions 2023-2024</li>
+              <li><img src="images/new.gif">Exam Fee Notification - July/August 2023 - 2022 Batch</li>
+              <li><img src="images/new.gif">Practical TimeTable - April/May 2023</li>
+              <li><img src="images/new.gif">Theory Time Table - April - May 2023 - UG</li>
+          </ul>
+      </marquee>
+
+      <h2>Events</h2>
+      <marquee direction="up" scrollamount="7" style="height:200px;">
+          <ul>
+              <li><img src="images/new.gif">Tamil Nadu State Government Sponsored Five Day Offline Faculty Development Programme On Full Stack Development</li>
+              <li><img src="images/new.gif">Theory Examinations TimeTable - M.E and Ph.D - June/July 2023</li>
+              <li><img src="images/new.gif">Re-Admission and Transfer Circular 2023</li>
+              <li><img src="images/new.gif">M.E Admissions 2023-2024</li>
+              <li><img src="images/new.gif">Tamil Nadu State Government Sponsored Twelve Day Online Faculty Development Programme On RECENT TRENDS IN IMMERSIVE TECHNOLOGY</li>
+              <li><img src="images/new.gif">Demo Video for applying to SC/ ST Scholarship - (Fresh/ Renewal) application</li>
+              <li><img src="images/new.gif">Naan Muthalvan - Banner</li>
+          </ul>
+      </marquee>
+
+      <h2>Notice Boards</h2>
+      <marquee direction="up" scrollamount="7" style="height:200px;">
+          <ul>
+              <li><img src="images/new.gif">Intercollege events at Sona College of Technology</li>
+              <li><img src="images/new.gif">National level essay competition</li>
+              <li><img src="images/new.gif">Club events</li>
+              <li><img src="images/new.gif">Eliminators has won in DESTINY 3.0</li>
+              <li><img src="images/new.gif">Solar cycle invented by a student of Production Dept</li>
+              <li><img src="images/new.gif">Hackathon coding contest - An intracollege event</li>
+              <li><img src="images/new.gif">Independence Day celebration and flag hoisting at 8:00 AM on 15th August</li>
+          </ul>
+      </marquee>
+
+      <h2><b>PRINCIPAL'S LEGACY</b></h2><br>
+      <marquee direction="left" scrollamount="10">
+          <img src="{{ url_for('static', filename='p8.jpg') }}"  width="200" height="200">
+          <img src="{{ url_for('static', filename='p1.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p2.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p3.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p4.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p5.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p6.jpg') }}" width="200" height="200">
+          <img src="{{ url_for('static', filename='p7.jpg') }}" width="200" height="200">
+      </marquee>
+      
+      <br><br>
+      <h2>Placement</h2>
+      <marquee class="placement" direction="left" scrollamount="20"><br>
+          <img src="{{ url_for('static', filename='company1.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company2.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company3.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company4.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company5.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company6.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company7.jpg') }}" width="100" height="100">
+          <img src="{{ url_for('static', filename='company8.jpg') }}" width="100" height="100">
+      </marquee>
+  </center><br><br>
+
+
+      <!-- Combined sections in a flex container -->
+      <div class="info-sections">
+        <div class="section">
+          <h2>LIFE @ GCT</h2>
+          <ul>
+              <li><a href="https://gct.ac.in/gct-club-cordinators">GCT Club Coordinators</a></li>
+              <li><a href="https://gct.ac.in/62/rotaract-club">Clubs</a></li>
+              <li><a href="https://gct.ac.in/staff-club">Staff club</a></li>
+              <li><a href="https://gct.ac.in/?q=node/699">Aperture - SJC</a></li>
+              <li><a href="https://youtu.be/RTVCcIoOAbg">Virtual Tour Old</a></li>
+              <li><a href="https://youtu.be/mWmrwLuLiD8">Virtual tour</a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>QUICK LINKS</h2>
+          <ul>
+              <li><a href="https://gct.ac.in/node/1278">RTI</a></li>
+              <li><a href="https://gct.ac.in/admission-procedures#">Admission Procedure</a></li>
+              <li><a href="https://gct.ac.in/fee-structure#overlay-context=milestones">Fee structure</a></li>
+              <li><a href="https://gct.ac.in/node/1523">Online Grievance Redressal</a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>CONTACT GCT</h2>
+          <ul>
+              <li><b>Email:</b> principal@gct.ac.in</li>
+              <li><b>Call:</b> (0422)-2432221</li>
+              <li><b>Fax:</b> +91 - 123 4567890</li>
+              <li><b>Website:</b> <a href="https://gct.ac.in">gct.ac.in</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <br>
+    <p style="text-align: center; font-size: 1.2rem; margin: 20px 0;">
+      📢 Need assistance? Click on the chat icon below to access the GCT Enquiry Chatbot!
+  </p>
+  
+    
+    <!-- <main>
+      <h1>College Enquiry Chatbot System</h1>
+    <p>This chatbot will respond to students' queries regarding university. Questions like "When are holidays ? ", "Can you tell more about teachers?","How long does MCA take ?","What is my CGPA this sem" can be answered by this chatbot. The original topic of this project is "Efficient Chatbot Design". Read the detailed exolanation on how we created this efficient chatbot design <a href="https://github.com/abhik-b/college-enquiry-chatbot/blob/master/Explanation.md" target="_blank">here.</a></p>
+
+    <h3>  All features :</h3>
+      <ul>
+        <li>Ask result or CGPA</li>
+        <li>Queries related to faculty</li>
+        <li>Course details & syllabus</li>
+        <li>Ask about holidays</li>
+      </ul>
+    
+      <h3>How to Interact :</h3>
+    <ul>
+      <li>Please Click on the chat button on the bottom-right corner. </li>
+      <li>Then interact with the chatbot : 
+          <ol>
+            <li>Try greeting the bot </li>
+            <li>ask for your result </li>
+            <li>ask for any particular course</li>
+            <li>Enquire about faculties or holidays</li>
+            <li>Ask for jokes !!!</li>
+          </ol>
+      </li>
+    </ul>
+  </main> -->
+ <div class="chatbot-section">
+        <figure class="mobile hidden">
+          <div class="app">
+            <!-- Header -->
+            <div class="header">
+              <!-- avatar -->
+              <img
+                class="avatar"
+                src="{{url_for('static',filename='dp.png')}}"
+                alt="Chatbot"
+              />
+              <div>
+
+                <p>GCT Enquiry CHATBOT</p>
+                <span>Online</span>
+              </div>
+              <!-- name & status -->
+            </div>
+
+            <!-- Chat section -->
+            <div class="chat-messages">
+              <div class="chat-message incoming-message">
+              👋  Hello, I am College Enquiry Bot 
+              </div>
+              <div class="chat-message incoming-message">
+              Ask me anything related to :
+                <ol>
+                  <li>Semester wise result 📜📚</li>
+                  <li>Faculty 🧑‍🏫👩‍🏫</li>
+                  <li>Holidays 🥳</li>
+                  <li>Joke 😃</li>
+                  <li>Fee Structure</li>
+                  <li>Syllabus</li>
+                  <li>etc...</li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- chat input section -->
+            <div class="chat-input-section">
+              <form id="chat-form">
+                <input
+                  id="chat-input"
+                  type="text"
+                  aria-label="chat-input"
+                  placeholder="Type a message ..."
+                />
+                <button
+                  class="svg-btn"
+                  type="submit"
+                  aria-label="send-message-btn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chat-input-svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </figure>
+        <div class="button-container">
+          <button onclick="toggleChatBot()" class="chat-open-btn">
+            <img
+              src="https://cdn.onlinewebfonts.com/svg/img_397748.png"
+              alt="chat bot"
+            />
+          </button>
+        </div>
+      </div>
+    
+    
+    <script src="{{url_for('static',filename='chat.js')}}"></script>
+  </body>
+</html>

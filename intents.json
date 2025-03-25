@@ -1,0 +1,667 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Excuse me",
+        "hii",
+        "I need help",
+        "Are you there",
+        "hii chatbot",
+        "hello chatbot",
+        "hi chatbot",
+        "Namaste",
+        "Good morning",
+        "Nice to meet you"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "A pleasant morning",
+        "Hello,How can I assist you",
+        "Hello,exicited to have you here",
+        "I am team7 chatbot",
+        "Hi,Thankyou for the greeting ,What do you want?",
+        "Nice to meet you too"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Thankyou for visiting"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "Okay"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "holidays",
+      "patterns": [
+        "holidays?",
+        "academic calender",
+        "When are holidays ? ",
+        "What kinds of holidays are there?",
+        "What holidays do we have?",
+        "tell more about holidays",
+        "holidays when ???",
+        "which days are holidays ?",
+        "How many days can we get after seach sem ?" ,
+        "Can we get study leave ?",
+        "what are the biggest holidays we can get ??",
+        "Are there any department wise special holiday ?"
+      ],
+      "responses": [""]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "Do you know the teachers ?",
+        "teachers",
+        "Who are the teachers ?",
+        "Can you tell more about teachers?",
+        "Tell me about teachers  ",
+        "more info on teachers",
+        "what are the teachers ?",
+        "tell more about the teachers",
+        "narula teachers",
+        "who is the the principal and what about the placement officer??" 
+      ],
+      "responses": [
+        "Our Prinicipal is K.Manonmani \n Our Placement Cell has Ramesh Sir and Placement Representatives from each department. "
+      ]
+    },
+
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "joke",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "result",
+      "patterns": [
+        "WHAT is my SGPA this sem ?",
+        "What is my CGPA this sem",
+        "Do you know my result?",
+        "Do you know my CGPA?",
+        "Do you know my curent cgpa?",
+        "tell me my cgpa?",
+        "tell me my curent sgpa?",
+        "tell me my result",
+        "what is my result",
+        "result",
+        "marks",
+        "cgpa"
+      ],
+      "responses": ["tell me your student id , example : \n434121010021"]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good day", "How are you?"],
+      "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"],
+      "context_set": ""
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["Goodbye", "Bye", "bye","See you later", "Talk to you later"],
+      "responses": ["Sad to see you go :(", "Goodbye!", "Come back soon!"],
+      "context_set": ""
+    },
+    {
+      "tag": "creator",
+      "patterns": ["Who created you?", "Who is your developer?", "Who made you?"],
+      "responses": ["I was created by Team7","Developer-Team7","Creator-Team 7"],
+      "context_set": ""
+    },
+    {
+      "tag": "identity",
+      "patterns": ["What is your name?", "What should I call you?", "Who are you?"],
+      "responses": ["You can call me Mind Reader. I'm a Chatbot."],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": ["What are the college timings?", "When is the college open?", "What are your hours of operation?"],
+      "responses": ["The college is open from 9am to 4.40pm, Monday to Friday.","Between 9AM - 4.40PM"],
+      "context_set": ""
+    },
+    {
+      "tag": "contact",
+      "patterns": ["How can I contact the college?", "What is the college telephone number?", "Can I get your contact number?","college contact","college number","college contact number","college telephone number","telephone number","How can I contact college"],
+      "responses": ["You can contact the college at (0422)-2432221."],
+      "context_set": ""
+    },
+    {
+      "tag": "courses",
+      "patterns": ["What courses are offered in the college?","What are the courses offered?","Offered courses","course programs","Can you tell me about the available courses?", "What are the branches in the college?","Courses","Courses available?","courses offered?"],
+      "responses": ["The college offers courses in Information Technology, Computer Science Engineering, Mechanical Engineering, EEE, ECE, Production Engineering ,E&I, and Civil Engineering.","B.E/B.Tech courses - 4 year and M.E/M.Tech courses - 2 years","About 9 courses are offered here."],
+      "context_set": ""
+    },
+    {
+      "tag": "PG_courses",
+      "patterns": ["What courses are offered for PG in the college?", "Can you tell me about the available courses for PG Students?", "What are the branches for PG in the college?"],
+      "responses": ["The college offers courses in  Chemical Engineering,Information Technology, Computer Science Engineering, Mechanical Engineering,Manufacturing Engineering, Production Engineering ,E&I, and Civil Engineering."],
+      "context_set": ""
+    },
+    {
+      "tag": "fees", 
+      "patterns": ["How much is the college fee?", "Tell me about the fees","fee structure","How much fees","Tell me about fees structure", "What are the hostel fees?","what about 7.5 reservation","what is fees for first graduate","fees concession for category wise","fees for year wise","are the fees same for all department","what about mess fees"],
+      "responses": ["For first years,it is around 4-5k for FG and 6-7k for NGF,and the hostel fee is Rs.12000 ,where 5K is the initial mess deposit which may refunded after the college completion.Also mess fee is to be paid everymonth ,it is around 2-3k.There is no fees for 7.5 reservation in both college and hostel fees,government takes incharge of it.For SC students the fees will be reduced around 2k "],
+      "context_set": ""
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is the college located?","location", "What is the college address?", "How can I reach the college?","How to locate the college?","landmark of the college","how far is the college?","location","landmark","How to reach the college","What is the place?","address","college address"],
+      "responses": ["The college is located at Venkatapuram,Thadagam Road. You can find the location on Google Maps.","You can reach Gandhipuram,using Bus no. 70 ,you can reach to college"],
+      "context_set": ""
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["Does the college provide hostel facilities?", "Where is the hostel located?", "hostel","What are the hostel fees?","is there  seperate hostel for each year","is there seperate boys and girls hostel"],
+      "responses": ["Hostel facilities is available for both boys and girls  ,for each  year there is a seperate hostel and they are located within the college campus.Hostel fee is around 7k every year"],
+      "context_set": ""
+    },
+    {
+      "tag": "events",
+      "patterns": ["What events are organized in the college?", "Are there any upcoming events?", "college events","Tell me about the college events."],
+      "responses": ["For information about the events, please visit our college website,gct.ac.in"],
+      "context_set": ""
+    },
+    {
+      "tag": "admission",
+      "patterns": ["What is the admission process?", "How can I take admission in the college?", "Admission process","How admission takes place?","Tell me about the admission criteria"],
+      "responses": ["The admission process starts with an online application through TNEA counselling","During the counselling process,online application is submitted.After that Choice list of colleges is to be provided,according to our ranks,College will be alloted.If we're not happy with the alloted college we can apply for upward,so that we can get our desired college in our choice list"],
+      "context_set": ""
+    },
+    {
+      "tag": "library",
+      "patterns": ["Does the college have a library?", "Where is the library located?", "What are the library timings?","Tell me about library","Library","Library facilities"],
+      "responses": ["Yes, the college has a library. The library is located inside campus. The timings are from 9am to 5pm, Monday to Friday."],
+      "context_set": ""
+    },
+    {
+      "tag": "facilities",
+      "patterns": ["What facilities are available in the college?", "Tell me about the college facilities.", "Do you have a sports complex?","facilities","college facilities","what are the facilities available?","Tell me about college facilities"],
+      "responses": ["The college provides various facilities including a sports complex, labs, cafeteria, and a library."],
+      "context_set": ""
+    },
+    {
+      "tag": "placement",
+      "patterns": ["How are the placements in the college?", "Tell me about the college placements.", "What is the placement record?"],
+      "responses": ["The college has a good placement record. Many reputed companies visit our campus for recruitment."],
+      "context_set": ""
+    },
+    {
+      "tag": "college_choice",
+      "patterns": ["Why did you choose this college?", "What made you decide to attend this college?","what are the advantages of attending this college"],
+      "responses": ["I chose this college because of its strong academic reputation, excellent faculty, and a wide range of courses offered."],
+      "context_set": ""
+    },
+    {
+      "tag": "happiness",
+      "patterns": ["Are you happy here?", "Do you enjoy being at this college?"],
+      "responses": ["As an AI, I don't have emotions, but I'm here to assist and provide information about the college."],
+      "context_set": ""
+    },
+    {
+      "tag": "strengths",
+      "patterns": ["What are your college's strengths?", "What makes your college stand out?"],
+      "responses": ["Our college excels in providing quality education, fostering a supportive learning environment, and offering a wide range of extracurricular activities."],
+      "context_set": ""
+    },
+    {
+      "tag": "complaints",
+      "patterns": ["What's your #1 complaint about your school?", "What do you think needs improvement in your college?"],
+      "responses": ["While my purpose is to provide information, some students may have different opinions. It's always good to provide feedback for continuous improvement."],
+      "context_set": ""
+    },
+    {
+      "tag": "improvements",
+      "patterns": ["What else could stand to be improved?", "In which areas do you think your college can improve?"],
+      "responses": ["Continuous improvement is essential for any institution. Areas that can be considered for improvement include infrastructure, facilities, and student support services."],
+      "context_set": ""
+    },
+    {
+      "tag": "accessibility",
+      "patterns": ["How accessible are administrators, registrars, financial aid officers, etc.?", "Can students easily reach out to college staff when needed?"],
+      "responses": ["The college administration strives to maintain accessibility for students. Office hours and contact information for various staff members are available for student assistance."],
+      "context_set": ""
+    },
+    {
+      "tag": "academics_majors",
+      "patterns": ["What majors are popular?", "Which fields of study have a high enrollment?", "What are the most sought-after majors in your college?"],
+      "responses": ["Popular majors in our college include Computer Science, Business Administration, Psychology, Engineering, and Biology."],
+      "context_set": ""
+    },
+    {
+      "tag": "academics_reputation",
+      "patterns": ["What departments or programs have the best reputations?", "Which academic programs are well-regarded?", "Are there any standout departments in your college?"],
+      "responses": ["Our college has well-regarded departments in Computer Science, Engineering, and Business Administration. These programs have a strong reputation for academic excellence."],
+      "context_set": ""
+    },
+    {
+      "tag": "favorite_class",
+      "patterns": ["What's your favorite class?", "Which class do you enjoy the most?", "Do you have a favorite subject?"],
+      "responses": ["As an AI, I don't have personal preferences. However, students often enjoy classes that align with their interests and career goals."],
+      "context_set": ""
+    },
+    {
+      "tag": "professors_teachers",
+      "patterns": ["Are your professors good teachers?", "How is the quality of teaching at your college?", "Do you have experienced faculty?"],
+      "responses": ["Our college prides itself on having experienced and dedicated faculty members who are committed to providing quality education."],
+      "context_set": ""
+    },
+    {
+      "tag": "professors_office_hours",
+      "patterns": ["Do your professors hold office hours, and will they meet with you outside of class?", "Are professors available for one-on-one meetings?", "Can students easily meet with professors?"],
+      "responses": ["Most professors at our college hold regular office hours and are available for one-on-one meetings to address student queries and provide additional guidance."],
+      "context_set": ""
+    },
+    {
+      "tag": "professors_vs_TAs",
+      "patterns": ["Are most of your classes taught by professors or teaching assistants?", "Who primarily teaches the classes?", "Do you have a lot of classes taught by TAs?"],
+      "responses": ["The majority of classes at our college are taught by professors. However, in some cases, teaching assistants may assist with course instruction or hold discussion sessions."],
+      "context_set": ""
+    },
+    {
+      "tag": "first_choice_classes",
+      "patterns": ["Were you able to take most of your first-choice classes?", "Do students generally get their preferred classes?", "How likely are you to get into your desired classes?"],
+      "responses": ["While course availability can vary, our college aims to accommodate students' preferences as much as possible. Course registration is conducted on a first-come, first-served basis."],
+      "context_set": ""
+    },
+    {
+      "tag": "class_format",
+      "patterns": ["Are your classes lecture-based or discussion-based?", "How are the classes structured?", "What's the typical format of a class?"],
+      "responses": ["The class format can vary depending on the subject and the instructor's teaching style. Some classes may be lecture-based, while others may involve more interactive discussions and group activities."],
+      "context_set": ""
+    },
+    {
+      "tag": "reading_writing",
+      "patterns": ["How much reading and writing is required in your courses?", "Are there a lot of assignments involving reading and writing?", "Is there a heavy emphasis on written work?"],
+      "responses": ["The amount of reading and writing required in courses can vary. Generally, students can expect a balanced mix of reading assignments, written projects, and exams."],
+      "context_set": ""
+    },
+    {
+      "tag": "collaborative_work",
+      "patterns": ["How often are collaborative work or group presentations required?", "Do you have a lot of group projects?", "Is there an emphasis on teamwork?"],
+      "responses": ["Collaborative work and group presentations are part of the learning experience at our college. Students often engage in group projects to enhance teamwork and develop important skills."],
+      "context_set": ""
+    },
+    {
+      "tag": "academic_advising",
+      "patterns": ["How satisfied are you with academic advising?", "Is the academic advising program helpful?", "Do advisors provide guidance for course selection?"],
+      "responses": ["Academic advising plays a crucial role in guiding students' academic journeys. Our college has dedicated advisors who provide assistance with course selection, degree planning, and academic support."],
+      "context_set": ""
+    },
+    {
+      "tag": "tutoring_programs",
+      "patterns": ["Do students use any on-campus tutoring programs or writing centers?", "Are there resources available for academic support?", "How can I get tutoring assistance?"],
+      "responses": ["Our college provides on-campus tutoring programs and writing centers to support students in their academic endeavors. These resources can help students with subject-specific assistance and writing skills."],
+      "context_set": ""
+    },
+    {
+      "tag": "class_size",
+      "patterns": ["How big are your classes?", "Are the class sizes large or small?", "Do you have small class sizes?"],
+      "responses": ["Class sizes can vary depending on the course and program. While some classes may have a larger enrollment, others, especially upper-level courses, tend to have smaller class sizes for more personalized attention."],
+      "context_set": ""
+    },
+    {
+      "tag": "independent_study",
+      "patterns": ["Does your major require an independent study or capstone project?", "Are there opportunities for independent research?", "Is there a culminating project for your major?"],
+      "responses": ["Many majors at our college offer opportunities for independent study or capstone projects. These experiences allow students to delve deeper into their fields of interest and apply their knowledge."],
+      "context_set": ""
+    },
+    {
+      "tag": "professor_research",
+      "patterns": ["Are professors available for research with students?", "Can students engage in research projects with faculty?", "How can I get involved in research at your college?"],
+      "responses": ["Faculty members at our college actively engage in research, and students often have opportunities to collaborate on research projects. You can reach out to professors in your field of interest to inquire about research opportunities."],
+      "context_set": ""
+    },
+    {
+      "tag": "study_abroad",
+      "patterns": ["Is it popular to study abroad?", "Are there study abroad programs available?", "Can students spend a semester abroad?"],
+      "responses": ["Studying abroad is a popular option for many students at our college. We offer various study abroad programs and opportunities to experience different cultures and gain international exposure."],
+      "context_set": ""
+    },
+    {
+      "tag": "first_year_experience",
+      "patterns": ["What's it like to be a first-year student here?", "Can you describe the first-year experience?", "What should I expect as a freshman?","first yr experience","college experience","experience","college memories"],
+      "responses": ["As a student, you can expect a supportive and welcoming environment. Orientation programs, peer mentoring, and academic support services are available to help you transition smoothly into college life."],
+      "context_set": ""
+    },
+    {
+      "tag": "typical_day",
+      "patterns": ["What's a typical day like?", "Can you describe a day in the life of a student?", "What's the daily routine at your college?","daily routine","routine"],
+      "responses": ["A typical day as a student involves attending classes, engaging in study sessions, participating in extracurricular activities, and utilizing campus resources. Each student's daily routine may vary based on their schedule and interests."],
+      "context_set": ""
+    },
+    {
+      "tag": "study_time",
+      "patterns": ["How much time do students spend studying per week?", "Is there a lot of studying required?", "What's the average study time for students?"],
+      "responses": ["The amount of time students spend studying can vary depending on their course load, study habits, and personal preferences. On average, students dedicate several hours per week to studying."],
+      "context_set": ""
+    },
+    {
+      "tag": "non_class_activities",
+      "patterns": ["What do you do when you're not in class?", "How do students spend their free time?", "Are there activities to do outside of class?"],
+      "responses": ["Outside of class, students engage in various activities such as participating in clubs and organizations, attending campus events, exploring the surrounding community, and spending time with friends."],
+      "context_set": ""
+    },
+    {
+      "tag": "weekend_activities",
+      "patterns": ["What do you do on the weekends?", "Are there weekend activities or events?", "How do students spend their weekends?"],
+      "responses": ["On weekends, students often take part in campus events, recreational activities, social gatherings, and may also use the time for relaxation and personal pursuits."],
+      "context_set": ""
+    },
+    {
+      "tag": "social_scene",
+      "patterns": ["What is the social scene like?", "How would you describe the social life on campus?", "Are there opportunities to meet new people?"],
+      "responses": ["The social scene on campus is vibrant and diverse. There are plenty of opportunities to meet new people, join clubs and organizations, attend social events, and build lifelong friendships."],
+      "context_set": ""
+    },
+    {
+      "tag": "hometown_activities",
+      "patterns": ["What kinds of things are there to do in your school's hometown?", "Are there recreational activities in the local area?", "What are some popular attractions near the college?"],
+      "responses": ["Our school's hometown offers a range of recreational activities, cultural events, shopping centers, restaurants, and natural attractions. You can explore local parks, museums, theaters, and enjoy the local cuisine."],
+      "context_set": ""
+    },
+    {
+      "tag": "food",
+      "patterns": ["How's the food?", "What is the quality of the food on campus?", "Are there good dining options?","canteen","canteen facilities","food courts available?","is canteen available?"],
+      "responses": ["The college provides a canteen on campus, including cafeterias, food courts. The quality of food is generally satisfactory, with options to cater to different dietary preferences."],
+      "context_set": ""
+    },
+    {
+      "tag": "on_campus_housing",
+      "patterns": ["Do most students live on-campus?", "Are there on-campus housing options?", "What percentage of students live in dorms?"],
+      "responses": ["While the availability of on-campus housing may vary, many students choose to live in dorms or residence halls provided by the college. Off-campus housing options are also available for students."],
+      "context_set": ""
+    },
+    {
+      "tag": "dorm_quality",
+      "patterns": ["How are the dorms?", "Are the dormitories comfortable?", "What's the quality of on-campus housing?"],
+      "responses": ["The quality of dormitories varies based on the specific residence halls. Generally, the college strives to provide comfortable and convenient living spaces with amenities that cater to students' needs."],
+      "context_set": ""
+    },
+    {
+      "tag": "popular_clubs",
+      "patterns": ["Which clubs and student organizations are popular?", "Are there any standout clubs on campus?", "What are some of the most active student organizations?"],
+      "responses": ["Our college has a wide range of clubs and student organizations catering to diverse interests. Popular clubs include academic organizations, cultural clubs, sports teams, community service groups, and more."],
+      "context_set": ""
+    },
+    {
+      "tag": "fraternities_sororities",
+      "patterns": ["Do lots of students belong to fraternities or sororities?", "Are there many Greek organizations on campus?", "What's the Greek life like at your college?"],
+      "responses": ["While the presence and prominence of fraternities and sororities can vary among colleges, our college does have a Greek life community. Participation in these organizations is a personal choice for interested students."],
+      "context_set": ""
+    },
+    {
+      "tag": "favorite_place_on_campus",
+      "patterns": ["What's your favorite place on campus?", "Which location do you enjoy the most?", "Where do students like to hang out?"],
+      "responses": ["As an AI, I don't have personal preferences. However, many students enjoy spending time in common areas, libraries, student centers, outdoor spaces, and campus cafeterias."],
+      "context_set": ""
+    },
+    {
+      "tag": "study_locations",
+      "patterns": ["Where do you like to study?", "What are some good study spots?", "Are there quiet places to study on campus?"],
+      "responses": ["There are several study spots on campus, including libraries, study lounges, coffee shops, and outdoor seating areas. It's important to find a location that suits your study preferences and helps you focus."],
+      "context_set": ""
+    },
+    {
+      "tag": "campus_facilities",
+      "patterns": ["What are the facilities like (science labs, libraries, theaters, gyms, etc.)?", "Are the campus facilities well-maintained?", "Does the college have modern facilities?","facilities in college","college facilities","facilities"],
+      "responses": ["Our college prides itself on maintaining well-equipped facilities to support students' academic and extracurricular activities. This includes modern science labs, libraries with extensive resources, theaters, and well-equipped gyms."],
+      "context_set": ""
+    },
+    {
+      "tag": "computer_labs",
+      "patterns": ["Are there enough computer labs?", "How accessible are the computer labs?", "Is there a shortage of computer lab facilities?"],
+      "responses": ["Our college provides an ample number of computer labs across campus. These labs are accessible to students and equipped with the necessary technology and software needed for academic work."],
+      "context_set": ""
+    },
+    {
+      "tag": "campus_wifi",
+      "patterns": ["How is the WiFi on campus?", "Is the campus WiFi reliable?", "Are there any connectivity issues with the WiFi?","wifi","campus wifi","wifi facilities"],
+      "responses": ["The campus WiFi network is designed to provide reliable internet connectivity to students, faculty, and staff. However, occasional connectivity issues may arise, which are usually promptly addressed by the IT department."],
+      "context_set": ""
+    },
+    {
+      "tag": "campus_navigation",
+      "patterns": ["Is it easy to get around campus?", "Are the campus buildings easy to navigate?", "Is the campus layout student-friendly?"],
+      "responses": ["The campus is designed to be student-friendly, and campus buildings are typically well-marked and easy to navigate. Campus maps, signage, and digital resources are available to help students find their way around."],
+      "context_set": ""
+    },
+    {
+      "tag": "sports_popularity",
+      "patterns": ["Are sports popular?", "Do many students participate in sports?", "What's the athletic culture like at your college?","games","sports","athletics"],
+      "responses": ["Sports are popular at our college, and many students participate in various athletic activities. We have a range of sports teams, intramural sports, and fitness programs to cater to different interests and skill levels."],
+      "context_set": ""
+    },
+    {
+      "tag": "school_spirit",
+      "patterns": ["Is there a lot of school spirit?", "Do students show a strong sense of school pride?", "Are there spirited events or traditions?"],
+      "responses": ["Our college has a vibrant school spirit, and students often show a strong sense of pride in their institution. There are spirited events, traditions, and opportunities to engage with the college community and showcase school pride."],
+      "context_set": ""
+    },
+    {
+      "tag": "fellow_students",
+      "patterns": ["How would you describe your fellow students?", "What are the students like?", "Is there a sense of community among students?"],
+      "responses": ["The student body is diverse and inclusive, with individuals from various backgrounds, interests, and experiences. Students generally foster a sense of community and support each other's academic and personal growth."],
+      "context_set": ""
+    },
+    {
+      "tag": "friendly_students",
+      "patterns": ["Are the students here friendly?", "Is it easy to make friends?", "Do students interact with each other?"],
+      "responses": ["Yes, the students here are generally friendly and welcoming. The college environment provides ample opportunities to meet new people, make friends, and form meaningful connections both inside and outside the classroom."],
+      "context_set": ""
+    },
+    {
+      "tag": "student_body_unique",
+      "patterns": ["What makes the student body unique?", "Is there anything special about the student population?", "What sets the students apart at your college?"],
+      "responses": ["The student body at our college is unique in its diversity of backgrounds, perspectives, talents, and passions. This diversity fosters a rich learning environment and encourages students to embrace different cultures and viewpoints."],
+      "context_set": ""
+    },
+    {
+      "tag": "campus_diversity",
+      "patterns": ["Is there diversity on campus?", "Are there students from different cultural backgrounds?", "Does the college promote diversity and inclusion?"],
+      "responses": ["Yes, our college values diversity and strives to create an inclusive campus community. Students from different cultural backgrounds, ethnicities, and countries contribute to the diverse fabric of our college community."],
+      "context_set": ""
+    },
+    {
+      "tag": "international_students",
+      "patterns": ["Are there many students from other countries?", "Do you have a significant international student population?", "How diverse is the international representation at your college?"],
+      "responses": ["Our college welcomes students from around the world, and we have a diverse international student population. International students contribute to the cultural exchange and global perspectives within the college community."],
+      "context_set": ""
+    },
+    {
+      "tag": "interactions_among_students",
+      "patterns": ["Do students of different races and classes interact easily?", "Is there interaction and socialization among diverse groups?", "Do students embrace diversity and engage in cross-cultural interactions?"],
+      "responses": ["Students at our college have opportunities to interact and socialize with peers from different races, classes, and cultural backgrounds. The college promotes a welcoming and inclusive environment that encourages cross-cultural interactions and understanding."],
+      "context_set": ""
+    },
+    {
+      "tag": "student_cliques",
+      "patterns": ["Are students cliquish?", "Is there a presence of cliques on campus?", "Do students segregate into exclusive groups?"],
+      "responses": ["While some social groups may naturally form based on shared interests and affiliations, our college encourages inclusivity and fosters an environment where students from different backgrounds can mingle and form connections beyond cliques."],
+      "context_set": ""
+    },
+    {
+      "tag": "internship_opportunities",
+      "patterns": ["Are internships available? How do you find them?", "What internship opportunities are there?", "How does the college support students in finding internships?"],
+      "responses": ["Internship opportunities are available for students, and the college often provides resources and support to help students find and secure internships. The college's career services office and faculty advisors can offer guidance in exploring and applying for internships."],
+      "context_set": ""
+    },
+    {
+      "tag": "career_services",
+      "patterns": ["Is Career Services helpful?", "What services does the career center provide?", "How effective is the college's career guidance?"],
+      "responses": ["Career Services at our college offers various resources and assistance to help students with career exploration, resume building, job search strategies, interview preparation, and more. Many students find the career guidance helpful in their professional development."],
+      "context_set": ""
+    },
+    {
+      "tag": "mentorship_program",
+      "patterns": ["Do you have a mentor?", "Is there a mentorship program?", "How can students connect with mentors?"],
+      "responses": ["Our college may have a mentorship program or opportunities for students to connect with mentors. These programs facilitate valuable guidance and support from experienced individuals who can provide insights and advice on academic and career paths."],
+      "context_set": ""
+    },
+    {
+      "tag": "co-op_program",
+      "patterns": ["Does your school have a co-op program?", "Are there cooperative education opportunities?", "How does the college support students in co-op experiences?"],
+      "responses": ["Some colleges offer co-op programs where students can gain practical work experience related to their field of study while earning academic credit. If our college has a co-op program, students can explore such opportunities with the support of the college's career services or cooperative education office."],
+      "context_set": ""
+    },
+    {
+      "tag": "leadership_opportunities",
+      "patterns": ["What options exist for leadership skills on campus?", "Are there leadership programs or positions?", "How can students develop leadership skills?"],
+      "responses": ["Our college offers various opportunities for students to develop leadership skills. Students can join student government, clubs, or organizations that provide leadership positions, participate in leadership workshops or programs, and engage in community service to foster leadership qualities."],
+      "context_set": ""
+    },
+    {
+      "tag": "service_learning",
+      "patterns": ["What options exist for service learning in the community?", "Are there community service programs?", "How can students get involved in community service?"],
+      "responses": ["Our college often encourages service learning and community engagement. Students can get involved in community service programs, volunteer with local organizations, participate in service-learning courses, or join campus initiatives dedicated to making a positive impact in the community."],
+      "context_set": ""
+    },
+    {
+      "tag": "employer_recruitment",
+      "patterns": ["Do employers recruit students on campus?", "Are there career fairs or job fairs?", "How does the college connect students with potential employers?"],
+      "responses": ["Employer recruitment is a common practice at many colleges. Career fairs, job fairs, and networking events are organized to connect students with potential employers. The college's career services office often plays a role in facilitating these connections."],
+      "context_set": ""
+    },
+    {
+      "tag": "summer_jobs",
+      "patterns": ["How easy is it to find summer jobs and other kinds of work through your school?", "Are there resources for finding summer employment?", "Does the college assist with summer job opportunities?"],
+      "responses": ["Our college may provide resources and support to help students find summer jobs and other types of employment. The career services office, online job boards, and networking events can be valuable in exploring and securing summer job opportunities."],
+      "context_set": ""
+    },
+    {
+      "tag": "notable_graduates",
+      "patterns": ["Who are some of the notable graduates from your college?", "Can you mention any famous alumni?", "Which successful individuals attended your college?"],
+      "responses": ["Our college has a distinguished list of notable graduates and successful alumni in various fields. Some may include renowned professionals, entrepreneurs, artists, scientists, and leaders who have made significant contributions to their respective fields."],
+      "context_set": ""
+    },
+    {
+      "tag": "alumni_association",
+      "patterns": ["How visible is your school's alumni association on campus?", "Does the college have an active alumni network?", "Are there opportunities to connect with alumni?"],
+      "responses": ["Many colleges have active alumni associations that offer networking opportunities, mentorship programs, and career support for current students. The visibility and engagement of the alumni association can vary, but efforts are often made to connect students with alumni."],
+      "context_set": ""
+    },
+    {
+      "tag": "hands-on_experiences",
+      "patterns": ["What kinds of hands-on or practical experiences have you had in and outside of the classroom?", "Are there opportunities for practical learning?", "How does the college emphasize experiential learning?"],
+      "responses": ["Colleges often provide opportunities for hands-on and practical experiences both inside and outside the classroom. These may include internships, research projects, fieldwork, service-learning, study abroad programs, and collaborative projects that enhance the learning process and offer real-world application of knowledge."],
+      "context_set": ""
+    },
+    {
+      "tag": "Scholarships",
+      "patterns": ["What are the scholarships available for the students?","tell me about scholarships","How much scholarship amount can be given to the students?", "What about the government and private scholarships?","scholarships","what are the scholarships provided?","Scholarships available?","scholarship offered"],
+      "responses": ["For First year Student,they can apply for both government and private scholarships.They are lot of private scholarships like FFE,Siemens etc,Coming to government scholarship,Community scholarship is provided and for girls,a special scheme of Pragati Scholarship of Rs.50000 is provided."],
+      "context_set": ""
+    },
+    {
+      "tag": "Course_Programs",
+      "patterns": ["What are the programs offered ?", "Whether the course program is full time or part-time?", "Is part time program is available ?","What are the courses available","courses"],
+      "responses": ["The institute offers various UG and PG Programs,offered in Part Time and Full time modes.Part time mode is only available for PG Students and for UG students only full time mode"],
+      "context_set": ""
+    },
+    {
+      "tag": "Ranking",
+      "patterns": ["What is the ranking of the College?", "What is the NIRF Ranking?", "Is this a good college,may I know about it?","ranking of the college","rank","ranking"],
+      "responses": ["It has maintained good ranks over the years at 200-300 in the 'Engineering' Category by the NIRF ranking 2024"],
+      "context_set": ""
+    },
+    {
+      "tag": "Clubs",
+      "patterns": ["What are the clubs available in this college?", "What are the extracurricular activities available?","club activities in the college","college club activities", "Apart from academics,what are available?","club","clubs","clubs available","club activities"],
+      "responses": ["There are various clubs available in this college,there're around 20 clubs","The extracurricular activities is carried out by many clubs which includes Sports club,Rotractary club,Vice club,Eliminators dance club,LDS,Tamil mandram,Student Journalist Council and so on & We can develop our skills."],
+      "context_set": ""
+    },
+    {
+      "tag": "Location",
+      "patterns": ["What is the location of the college?", "Can I know the exact location of the college?", "How could I reach college?","What are the bus to college?","Bus no. to college?","location","location of the college"],
+      "responses": ["The college is located at XYZ nagar,Thadagam Road,Coimbatore.Once you reached Coimbatore,Bus no.70 is available to this institute which has a fare of 10-15 rps from Coimbatore Gandhipuram bus stand.","Reaching Campus ,by bus no. 70(TNSTC) and 11(TNSTC) bus to Venkittapuram stop.By Taxi Rs.250 from Gandhipuram(approx) and Rs.300 from Railway Station(approx)."],
+      "context_set": ""
+    },
+    {
+      "tag": "Ph.D Programme",
+      "patterns": ["What are the Ph.D Programs available for the students?", "Is ph.D program available?", "What about the gPh.D programs?","M.E programs","M.E courses","Master Degree courses","ME programs"],
+      "responses": ["Based on the selection list of Anna University,It has 11 programs which include Civil,Mechanical,EEE,ECE,E&I,CSE,IBT,Mathematics,Physics,Chemistry and English."],
+      "context_set": ""
+    },
+    {
+      "tag": "get_seat",
+      "patterns": ["How to get seat in Coimbatore?", "What is the way to get into this institute?", "How can I get admission in this colleges?","How to get seat","What is the way to get into this college?","How could I get seat here?","Way to get seat"],
+      "responses": ["Admission to all UG programmea are through single window system.Reservations are provided for BC/MBC/DNC/SC/ST etc as per the rules of the Government of Tamilnadu,Reservations are also provided for physically handicapped /sports persons/Other state candidates.","During counseling process,according to the reservations and cutoff,we can get seat in this institute."],
+      "context_set": ""
+    },
+    {
+      "tag": "seats",
+      "patterns": ["How many seats are there in this college?", "No. of seats here available ?","total seats available?","total seats ","total_seats every year", "Seats available in this institute?","no. of seats","number of seats","No. of seats avilable per year","How many seats are available"],
+      "responses": ["The courses are approved by the AICTE.In total,the institute provides 1324 seats for the students.","Total 1324 seats are available","Civil and IBT have 120 seats and all other depts have 60 seats,Also some seats are for lateral and transfer students."],
+      "context_set": ""
+    },
+      {
+      "tag": "dress code",
+      "patterns": ["What is the dress code ?", "Dress code for girls?", "What is the dress code for boys ?","dress code","uniform code","dressing style","code dress"],
+      "responses": ["Girls has to wear only chudithar in campus,But during dept function or any club function,they can wear saree","For boys ,normal pant and shirts,T-shirts and shorts are not allowed."],
+      "context_set": ""
+    },
+      {
+      "tag": "placement_record",
+      "patterns": ["What is the placement record in this college ?", "How much will get placed?", "What is the placement statistics ?","placement statistics","placement record","How much got placed every year"],
+      "responses": ["Almost 80% of students got placed in the college with a range of salaries from 5LPA to 7.5LPA"],
+      "context_set": ""
+    },
+      {
+      "tag": "Top_recruiting_companies",
+      "patterns": ["What are the top recruiting companies ?", "What are the companies come for placements here?", "Students eligible cgpa for placements?","placement companies","top recruiting companies","companies coming for placements"],
+      "responses": ["Many reputable companies such as TCS,Wipro,Infosys and Virtusa would visit the campus for placements.Some of the top recruiting companies include TCS,Wipro,Zoho,RootQuotient etc.To be eligible for placements,students need to have an above 7 cgpa","Placement record was good.Almost above 80% of students would get placed in top companies like zoho,infosys,TCS etc"],
+      "context_set": ""
+    },
+       {
+        "tag": "Principal",
+        "patterns":["who is the principal of the college?","Principal name","Principal","Current principal"],
+        "responses":["K Manonmani is the principal of GCT"],
+        "context_set":""
+    },
+       {
+        "tag":"teachers",
+        "patterns":["How many teachers are there in the college","teachers count","staff strength","staffs count","faculty details","faculties","how many staffs","How many staffs are there in the college","How many  teaching staffs are there in the college","How many non teaching staffs are there in the college"],
+        "responses":["Each department has total staff strength of 18 including teaching and non teaching staff"],
+        "context_set":""
+
+    },
+     {
+        "tag":"HOD",
+        "patterns":["List the HOD's of all department","HODS","Name of the hods","Hods of all department","Give the name of the hods","HOD names","hods"],
+        "responses":["Dr.R.Thenmozhi- Civil Engineering,Structural Engineering and Geotechnical Engineering:\n Dr.K.Ramesh-Mechanical Engineering,Thermal Engineering:\n,Dr.V.Gopalakrishnan- EEE,Power Electronics &  Drives, Power Systems Engineering:\n Dr.C.Santhi-ECE,Applied Electronics,VLSI Design :\n Dr.S.Srinivasa Moorthy-Production Engineering:\n Dr.E.Lath Mercy-EIE:\n Dr.J.C Miraclin Joyce Pamila-CSE:\n Dr.S.Rathi-IT:\n Dr.J.Jayanthi-IBT,Environmental Engineering:\n Dr.N.Nandha Kumar- Engineering Design:\n Dr.T.Sekar-Manufacturing Engineering:\n"]
+    }
+
+  ]
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government College of Technology</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}" />
+    <style>
+  /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #002060;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align h1 and header-links */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee below header */
+/* Marquee below header */
+
+.marquee-container {
+    margin-top: 5px;
+    color: #e5e8ee; /* Text color only */
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1rem;
+    background-color: transparent; /* Remove the background */
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: #ffd700;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #002060;
+    font-weight: bold;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+nav ul li ul li {
+    padding: 10px;
+}
+
+nav ul li ul li a {
+    color: #002060;
+}
+
+nav ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 10px;
+}
+
+.card {
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #002060;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Footer Section */
+footer {
+    background-color: #002060;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-extra {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    header .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-links {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="GCT Logo">
+            <div>
+                <h1>Government College of Technology</h1>
+                
+            </div>
+        </div>
+        <div class="header-links">
+            <a href="#admissions">Admissions</a>
+            <a href="#academics">Academics</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <p class="sub-header">(An Autonomous Institution affiliated to Anna University)</p>
+        </div>
+        <div class="marquee-container">
+            <marquee direction="right" scrollamount="10">
+                The Institution has been accredited by NAAC - A grade with a score of 3.21 for a period of 5 years
+            </marquee>
+        </div>
+    </header>
+    
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a>
+                <ul>
+                    <li><a href="#about-college">About the College</a></li>
+                    <li><a href="map-gct.html">Map of GCT</a></li>
+                    <li><a href="#vision-mission">Vision and Mission</a></li>
+                    <li><a href="https://www.dote.tn.gov.in/" target="_blank">DOTE</a></li>
+                </ul>
+            </li>
+            <li><a href="#academics">Academics</a>
+                <ul>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#library">Library</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+<!-- Campus News Section and Banner Layout -->
+<div style="display: flex; margin: 20px 0; gap: 10px; align-items: stretch;">
+
+    <!-- Campus News Section -->
+    <div style="flex: 1; max-width: 25%; background-color: #002060; color: white; padding: 15px; border-radius: 5px; height: 400px;"> <!-- Increased height -->
+        <h2 style="font-size: 1.2rem; border-bottom: 2px solid #FFD700; padding-bottom: 5px; margin-bottom: 10px; text-align: center;">
+            Campus News
+        </h2>
+        <marquee direction="up" scrollamount="3" style="height: calc(100% - 50px);">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 10px;">AISHE Reports</li>
+                <li style="margin-bottom: 10px;">Bonafide and Fee Structures - UG / PG students - 2024 to 2025</li>
+                <li style="margin-bottom: 10px;">Fees Circular - Full Time B.E / M.E / Part Time B.E</li>
+                <li style="margin-bottom: 10px;">Part Time B.E Admissions 2024-2025</li>
+                <li style="margin-bottom: 10px;">Exam Fee Notification </li>
+                <li style="margin-bottom: 10px;">Practical Time Table - December 2024</li>
+                <li>Theory Time Table - December/January 2025-2025 - UG</li>
+            </ul>
+        </marquee>
+    </div>
+
+    <!-- Banner Section -->
+    <div style="flex: 3; position: relative; height: 400px;"> <!-- Increased height -->
+        <img src="{{ url_for('static', filename='gct main block.jpg') }}" alt="Banner Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+        <h2 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 2rem; background: rgba(0, 0, 0, 0.5); padding: 10px 20px; text-align: center;">
+            Empowering Through Education
+        </h2>
+    </div>
+</div>
+
+
+  <!-- Cards Section -->
+<div class="cards">
+    <div class="card">
+        <h3>Admissions</h3>
+        <p>Explore our admission process and join our vibrant academic community.</p>
+        <h4>Undergraduate Program</h4>
+        <p>Admissions are through a single window system with reservations as per Tamil Nadu Government rules.</p>
+        
+        <h4>Postgraduate Program</h4>
+        <p>Admissions for M.E./M.Tech are through Anna University's Single Window System with TANCET/GATE required.</p>
+        
+        <h4>Ph.D. Program</h4>
+        <p>Ph.D. scholars are selected based on Anna University's list and pursue the program under recognized supervisors.</p>
+    </div>
+    <div class="card">
+        <h3>Academics</h3>
+        <p>Discover our courses and academic resources tailored for excellence.</p>
+        <h4>Departments:</h4>
+        <ul style="list-style: none; padding: 0; text-align: left; color: #666;">
+            <li>Information Technology</li>
+            <li>Computer Science Engineering</li>
+            <li>Electronics and Communication Engineering</li>
+            <li>Industrial Biotechnology</li>
+            <li>Mechanical Engineering</li>
+            <li>Electrical and Electronics Engineering</li>
+            <li>Electronics and Instrumentation</li>
+            <li>Civil Engineering</li>
+            <li>Production Engineering</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>Campus Life</h3>
+        <p>Experience a thriving campus life with state-of-the-art facilities.</p>
+        <table border="1">
+            <tr>
+                <th colspan="2"><font color="red">Clubs</font></th>
+            </tr>
+            <tr>
+                <td>Eliminators</td>
+                <td>Literary & Debating Society</td>
+            </tr>
+            <tr>
+                <td>Sports club</td>
+                <td>Tamil Mandram</td>
+            </tr>
+            <tr>
+                <td>Administration Aspirants Council</td>
+                <td>Rotaract-club</td>
+            </tr>
+            <tr>
+                <td>gSARC</td>
+                <td>National Service Scheme</td>
+            </tr>
+            <tr>
+                <td>Students Journalist Council</td>
+                <td>Green Club</td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+</div>
+
+    <div style="margin: 40px auto; text-align: center;  background-color: #002060; padding: 20px 0; border-top: 2px solid #ccc; border-bottom: 2px solid #ccc;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: white;"><b>PRINCIPAL'S LEGACY</b></h2>
+        <marquee direction="left" scrollamount="10" style="width: 90%; margin: auto;">
+            <img src="{{ url_for('static', filename='rudra gct.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 1.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 3.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 4.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 5.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 6.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 7.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 8.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 9.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 10.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 11.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 12.jpg') }}"width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 17.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 18.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+            <img src="{{ url_for('static', filename='gct 19.jpg') }}" width="100" height="100" style="margin-right: 20px;">
+        </marquee>
+    </div>
+  <!-- Footer Section -->
+<footer style="background-color: #002060; color: #fff; font-family: Arial, sans-serif; padding: 30px 20px;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        
+        <!-- Life @ GCT -->
+        <div class="footer-section" style="flex: 1; margin: 10px; min-width: 200px;">
+            <h4 style="border-bottom: 2px solid #FFD700; padding-bottom: 5px;">Life @ GCT</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>GCT Club Coordinators</li>
+                <li>Clubs</li>
+                <li>Staff Club</li>
+                <li>Aperture - SJC</li>
+                <li>Virtual Tour Old</li>
+                <li>Virtual Tour</li>
+            </ul>
+        </div>
+
+        <!-- Downloads -->
+        <div class="footer-section" style="flex: 1; margin: 10px; min-width: 200px;">
+            <h4 style="border-bottom: 2px solid #FFD700; padding-bottom: 5px;">Downloads</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>Mandatory Disclosure</li>
+                <li>Faculty/Staff forms</li>
+                <li>NAAC Forms</li>
+                <li>Internal Audit Forms</li>
+                <li>College Calendar</li>
+                <li>IT Forms</li>
+                <li>Wi-Fi Forms</li>
+            </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section" style="flex: 1; margin: 10px; min-width: 200px;">
+            <h4 style="border-bottom: 2px solid #FFD700; padding-bottom: 5px;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>NAAC 2<sup>nd</sup> Cycle</li>
+                <li>RTI</li>
+                <li>Admission Procedure</li>
+                <li>Fee Structure</li>
+                <li>Online Grievance Redressal</li>
+                <li>Helpdesk</li>
+                <li>Students Grievance Redressal Committee</li>
+            </ul>
+        </div>
+
+        <!-- Contact GCT -->
+        <div class="footer-section" style="flex: 1; margin: 10px; min-width: 200px;">
+            <h4 style="border-bottom: 2px solid #FFD700; padding-bottom: 5px;">Contact GCT</h4>
+            <p style="margin: 0;"><strong>Government College of Technology</strong></p>
+            <p style="margin: 0;">Thadagam Road, Coimbatore,<br>Tamil Nadu - 641 013</p>
+            <p style="margin: 0;">Phone: <a href="tel:04222432221" style="color: #FFD700;">(0422) - 2432221</a></p>
+            <p style="margin: 0;">Email: <a href="mailto:principal@gct.ac.in" style="color: #FFD700;">principal@gct.ac.in</a></p>
+        </div>
+
+        <!-- Additional Links with Icons -->
+        <div class="footer-section" style="flex: 1; margin: 10px; min-width: 200px;">
+            <h4 style="border-bottom: 2px solid #FFD700; padding-bottom: 5px;">&nbsp;</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>⚙️ Industrial Relationship</li>
+                <li>🔍 Equal Opportunity Cell</li>
+                <li>🛡️ Anti-Ragging Committee</li>
+                <li>📄 Grievances</li>
+                <li>⚖️ Sexual Harassment Redressal Committee</li>
+                <li>👩‍🎓 Women Empowerment Cell</li>
+                <li>🗺️ Reaching GCT Campus</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div style="margin-top: 20px; border-top: 1px solid #FFD700; padding-top: 10px; text-align: center; font-size: 14px;">
+        <p style="margin: 0;">© 2024 GCT, Coimbatore. All Rights Reserved</p>
+        <p style="text-align: center; font-size: 1.2rem; margin: 20px 0;">
+            📢 Need assistance? Click on the chat icon below to access the GCT Enquiry Chatbot!
+        </p>
+    </div>
+</footer>
+
+ <!-- <main>
+      <h1>College Enquiry Chatbot System</h1>
+    <p>This chatbot will respond to students' queries regarding university. Questions like "When are holidays ? ", "Can you tell more about teachers?","How long does MCA take ?","What is my CGPA this sem" can be answered by this chatbot. The original topic of this project is "Efficient Chatbot Design". Read the detailed exolanation on how we created this efficient chatbot design <a href="https://github.com/abhik-b/college-enquiry-chatbot/blob/master/Explanation.md" target="_blank">here.</a></p>
+
+    <h3>  All features :</h3>
+      <ul>
+        <li>Ask result or CGPA</li>
+        <li>Queries related to faculty</li>
+        <li>Course details & syllabus</li>
+        <li>Ask about holidays</li>
+      </ul>
+    
+      <h3>How to Interact :</h3>
+    <ul>
+      <li>Please Click on the chat button on the bottom-right corner. </li>
+      <li>Then interact with the chatbot : 
+          <ol>
+            <li>Try greeting the bot </li>
+            <li>ask for your result </li>
+            <li>ask for any particular course</li>
+            <li>Enquire about faculties or holidays</li>
+            <li>Ask for jokes !!!</li>
+          </ol>
+      </li>
+    </ul>
+  </main> -->
+  <div class="chatbot-section">
+    <figure class="mobile hidden">
+      <div class="app">
+        <!-- Header -->
+        <div class="header">
+          <!-- avatar -->
+          <img
+            class="avatar"
+            src="{{url_for('static',filename='dp.png')}}"
+            alt="Chatbot"
+          />
+          <div>
+
+            <p>GCT Enquiry CHATBOT</p>
+            <span>Online</span>
+          </div>
+          <!-- name & status -->
+        </div>
+
+        <!-- Chat section -->
+        <div class="chat-messages">
+          <div class="chat-message incoming-message">
+          👋  Hello, I am College Enquiry Bot 
+          </div>
+          <div class="chat-message incoming-message">
+          Ask me anything related to :
+            <ol>
+              <li>Semester wise result 📜📚</li>
+              <li>Faculty 🧑‍🏫👩‍🏫</li>
+              <li>Holidays 🥳</li>
+              <li>Joke 😃</li>
+              <li>Fee Structure</li>
+              <li>Syllabus</li>
+              <li>etc...</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- chat input section -->
+        <div class="chat-input-section">
+          <form id="chat-form">
+            <input
+              id="chat-input"
+              type="text"
+              aria-label="chat-input"
+              placeholder="Type a message ..."
+            />
+            <button
+              class="svg-btn"
+              type="submit"
+              aria-label="send-message-btn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="chat-input-svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </figure>
+    <div class="button-container">
+      <button onclick="toggleChatBot()" class="chat-open-btn">
+        <img
+          src="https://cdn.onlinewebfonts.com/svg/img_397748.png"
+          alt="chat bot"
+        />
+      </button>
+    </div>
+  </div>
+
+
+<script src="{{url_for('static',filename='chat.js')}}"></script>
+</body>
+</html>

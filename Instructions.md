@@ -1,4 +1,3 @@
-# Follow this after cloning this repo & use it
 
 ## Virtual Environment
 
@@ -14,7 +13,6 @@ in VS Code, run `Ctrl+Shift+P` ,s earch for _Create environment_ & create one. *
 ## Installations (in terminal)
 
 1. `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
-   **Note** : I have used CUDA (GPU) so torch versions have `+cu116` written.
 2. `pip install nltk spacy flask flask_sqlalchemy`
 3. `python -m spacy download en_core_web_sm`
 4. `pip install thinc wheel`

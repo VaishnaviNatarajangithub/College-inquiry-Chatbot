@@ -131,9 +131,17 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
+import os
+import nltk
 
-nltk.download('punkt')
-nltk.download('wordnet')
+# Fix for Render: download NLTK data to a local folder
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(nltk_data_path, exist_ok=True)
+
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('wordnet', download_dir=nltk_data_path)
+nltk.data.path.append(nltk_data_path)
+
 
 # Load intents data
 with open('intents.json') as file:

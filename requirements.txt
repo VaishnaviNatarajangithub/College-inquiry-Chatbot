@@ -1,4 +1,4 @@
-Flask==2.2.2
+Flask==2.2.5
 Flask-SQLAlchemy==2.5.1
 torch==2.8.0
 torchvision==0.23.0
@@ -6,3 +6,5 @@ numpy
 nltk
 scikit-learn
 requests
+werkzeug==2.2.3
+

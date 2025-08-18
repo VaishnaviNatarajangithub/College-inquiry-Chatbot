@@ -1,3 +1,6 @@
+import os
+from flask_server.university import app
+from chat import chatbot_response
 from flask import render_template, request, jsonify, redirect, url_for
 import requests
 from flask_server import app, db
@@ -78,8 +81,11 @@ def fetch_result():
 
     return jsonify({'response': response, 'url': ""})
 
-import os
+
+
 
 if __name__ == "__main__":
+    # Run on host 0.0.0.0 and port from Render environment
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
 
